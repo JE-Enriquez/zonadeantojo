@@ -2,7 +2,7 @@
 import Header from './components/Header/Header'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from './components/theme/GlobalStyle'
-import Theme from './components/theme/index.js'
+import Theme from './components/theme/index'
 import Banner from './components/Banner/banner'
 import Main from './components/Main/Main'
 import Contact from './components/Contact/Contact'
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={Theme}>
-        <GlobalStyle />
+        <GlobalStyle theme={Theme}/>
       
           <Header appName="Zona de Antojo"/>
           <Banner />

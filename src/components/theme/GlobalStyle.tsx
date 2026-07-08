@@ -1,7 +1,8 @@
 import {createGlobalStyle} from 'styled-components';
 import reset from 'styled-reset';
+import Theme from './index'
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle<{ theme: typeof Theme}>`
     ${reset};
 
     body {

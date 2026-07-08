@@ -1,5 +1,19 @@
+interface ThemeType {
+    colors: {
+        background: string;
+        btn: string;
+        txt: string;
+        txtSpecial: string;
+    },
 
-const Theme = {
+    fonts: {
+        titles: string;
+        text: string;
+        base: string;
+    }
+}
+
+const Theme: ThemeType = {
     colors: {
         background: '#111111',
         btn: '#D4AF37',
